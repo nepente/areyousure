@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Are you sure?</title>
+</head>
+<body>
+  <h1>Are you sure?</h1>
+  <form action="" data-confirm-submission>
+    <div>
+      <input type="checkbox" id="sure" name="sure" /><label for="sure">I am</label>
+    </div>
+    <div>
+      <button type="submit" data-confirm-message="Are you really sure?">Send</button>
+    </div>
+  </form>
+
+  <script src="./areyousure.js"></script>
+  <script>
+  function ready(fn) {
+    if (document.readyState != 'loading') {
+      fn();
+    } else {
+      document.addEventListener('DOMContentLoaded', fn);
+    }
+  }
+
+  ready(function() {
+    var form = document.querySelector('form');
+    areyousure.init(form);
+  })
+  </script>
+</body>
+</html>
