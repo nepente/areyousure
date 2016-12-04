@@ -1,11 +1,15 @@
 {
   "name": "areyousure",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "areyousure is a dirty alternative to window.confirm",
+  "main": "areyousure.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Nepente - Software Craftmanship",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nepente/areyousure.git"
+  }
 }
